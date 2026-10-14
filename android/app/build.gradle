@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Release signing is read from android/keystore.properties (not versioned).
+def keystorePropsFile = rootProject.file('keystore.properties')
+def keystoreProps = new Properties()
+if (keystorePropsFile.exists()) {
+    keystorePropsFile.withInputStream { keystoreProps.load(it) }
+}
+
+android {
+    namespace 'com.ts3wa.port'
+    compileSdk 33
+    ndkVersion '27.2.12479018'
+
+    defaultConfig {
+        applicationId 'com.ts3wa.port'
+        minSdk 26
+        targetSdk 33
+        versionCode 4
+        versionName '0.0.4-arm32-hd-experimental'
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+        externalNativeBuild {
+            cmake {
+                arguments '-DANDROID_STL=c++_shared', '-DANDROID_PLATFORM=android-26', '-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON'
+            }
+        }
+    }
+
+    signingConfigs {
+        release {
+            if (keystorePropsFile.exists()) {
+                storeFile rootProject.file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            jniDebuggable true
+        }
+        release {
+            minifyEnabled false
+            signingConfig keystorePropsFile.exists() ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+            version '3.22.1'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+}

@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.22)
+project(ts3wa_cpu_probe C)
+
+if(NOT UNICORN_SOURCE_DIR)
+    message(FATAL_ERROR "Pass -DUNICORN_SOURCE_DIR=<Unicorn 2.1.4 source>")
+endif()
+set(UNICORN_ARCH arm CACHE STRING "Guest architecture" FORCE)
+set(UNICORN_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(UNICORN_INSTALL OFF CACHE BOOL "" FORCE)
+set(UNICORN_LEGACY_STATIC_ARCHIVE OFF CACHE BOOL "" FORCE)
+set(BUILD_SHARED_LIBS ON CACHE BOOL "" FORCE)
+add_subdirectory(${UNICORN_SOURCE_DIR} unicorn)
+
+add_executable(ts3wa_cpu_probe probe.c)
+target_compile_features(ts3wa_cpu_probe PRIVATE c_std_11)
+target_compile_options(ts3wa_cpu_probe PRIVATE -Wall -Wextra -Werror)
+target_link_libraries(ts3wa_cpu_probe PRIVATE unicorn)

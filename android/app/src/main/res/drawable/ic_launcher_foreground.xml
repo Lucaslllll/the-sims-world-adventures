@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <group android:pivotX="54" android:pivotY="54" android:scaleX="0.90" android:scaleY="0.90">
+        <!-- Golden compass around a blue globe: the travel identity of this port. -->
+        <path android:fillColor="#03152C" android:fillAlpha="0.50"
+            android:pathData="M54,26 C71.12,26 85,39.88 85,57 C85,74.12 71.12,88 54,88 C36.88,88 23,74.12 23,57 C23,39.88 36.88,26 54,26 Z" />
+        <path android:fillColor="#F4CD68"
+            android:pathData="M54,23 C71.12,23 85,36.88 85,54 C85,71.12 71.12,85 54,85 C36.88,85 23,71.12 23,54 C23,36.88 36.88,23 54,23 Z" />
+        <path android:fillColor="#166091"
+            android:pathData="M54,25 C70.02,25 83,37.98 83,54 C83,70.02 70.02,83 54,83 C37.98,83 25,70.02 25,54 C25,37.98 37.98,25 54,25 Z" />
+        <path android:fillColor="#249AB3" android:fillAlpha="0.60"
+            android:pathData="M54,26 C65.2,26 75.6,32.6 80.2,43 C68,38 45,37 28,43 C32.7,32.6 42.8,26 54,26 Z" />
+        <path android:fillColor="#0B3A64" android:fillAlpha="0.70"
+            android:pathData="M26,61 C40,69 62,72 80,63 C75,75 65,82 54,82 C40,82 29,73 26,61 Z" />
+        <path android:strokeColor="#73DFE0" android:strokeAlpha="0.45" android:strokeWidth="1"
+            android:pathData="M28,42 C41,35 65,35 80,42 M26,54 C40,49 67,49 82,54 M28,66 C41,73 65,73 80,66 M54,26 C34,36 34,71 54,82 M54,26 C74,36 74,71 54,82" />
+        <path android:fillColor="#FFF0B5"
+            android:pathData="M24,53 L30,51 L30,57 L24,55 Z M78,51 L84,53 L84,55 L78,57 Z M53,24 L51,30 L57,30 L55,24 Z M51,78 L53,84 L55,84 L57,78 Z" />
+        <!-- Faceted Sims plumbob, bright enough to read at launcher size. -->
+        <path android:fillColor="#061A2B" android:fillAlpha="0.55"
+            android:pathData="M53,24 L73,53 L53,85 L33,53 Z" />
+        <path android:fillColor="#D4FF92"
+            android:pathData="M51,20 L71,50 L51,82 L31,50 Z" />
+        <path android:fillColor="#95F833"
+            android:pathData="M51,24 L34,50 L51,55 Z" />
+        <path android:fillColor="#48CE14"
+            android:pathData="M51,24 L68,50 L51,55 Z" />
+        <path android:fillColor="#32BC10"
+            android:pathData="M34,50 L51,78 L51,55 Z" />
+        <path android:fillColor="#10870E"
+            android:pathData="M68,50 L51,78 L51,55 Z" />
+        <path android:fillColor="#EDFFC7" android:fillAlpha="0.75"
+            android:pathData="M51,24 L37,48 L40,47 Z" />
+        <path android:fillColor="#C1FF75"
+            android:pathData="M34,50 L51,55 L68,50 L51,57 Z" />
+        <!-- Small aircraft on the compass rim. -->
+        <path android:fillColor="#062743" android:fillAlpha="0.65"
+            android:pathData="M70,37 L80,31 C81,30.4 82,31.1 81.3,32.4 L76,42 L73.8,40.4 L75.1,36.6 L71.4,38.9 Z" />
+        <path android:fillColor="#FFFFFF"
+            android:pathData="M66,34 L73,33 L78,28 C79.4,26.6 81.4,26.6 80.5,28.8 L76.8,35.6 L78.7,41 L76.6,43 L72.9,38 L69.3,38.7 L67.6,41 L66,39.8 L67.3,36.8 L64,35.6 Z" />
+        <path android:fillColor="#B9E5F5"
+            android:pathData="M67.3,36.8 L80,28 L76.8,35.6 L72.9,38 L69.3,38.7 Z" />
+        <!-- The Sims 3 badge shares the visual family of the Ambitions launcher. -->
+        <path android:fillColor="#03162B" android:fillAlpha="0.55"
+            android:pathData="M68,64 C74.63,64 80,69.37 80,76 C80,82.63 74.63,88 68,88 C61.37,88 56,82.63 56,76 C56,69.37 61.37,64 68,64 Z" />
+        <path android:fillColor="#FFF0B2"
+            android:pathData="M68,62 C74.63,62 80,67.37 80,74 C80,80.63 74.63,86 68,86 C61.37,86 56,80.63 56,74 C56,67.37 61.37,62 68,62 Z" />
+        <path android:fillColor="#F5BE42"
+            android:pathData="M68,64 C73.52,64 78,68.48 78,74 C78,79.52 73.52,84 68,84 C62.48,84 58,79.52 58,74 C58,68.48 62.48,64 68,64 Z" />
+        <path android:fillColor="#113A5C"
+            android:pathData="M64.4,67.2 C67.4,65.5 72.2,66.1 72.2,69.4 C72.2,71.1 71.2,72.1 69.6,72.7 C71.8,73 72.9,74.2 72.9,76.3 C72.9,80 69.2,81.5 64.1,79.7 L64.1,76.9 C67,78.3 69.8,78.2 69.8,76.1 C69.8,74.5 68.3,74.1 65.8,74.1 L65.8,71.6 C68.5,71.6 69.4,70.9 69.4,69.7 C69.4,68.3 67.4,68.2 64.4,69.7 Z" />
+    </group>
+</vector>

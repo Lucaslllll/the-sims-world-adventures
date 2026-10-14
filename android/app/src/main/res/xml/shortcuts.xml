@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="screen_settings" android:enabled="true"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:shortcutShortLabel="@string/screen_settings">
+        <intent android:action="com.ts3wa.port.SCREEN_SETTINGS"
+            android:targetPackage="com.ts3wa.port" android:targetClass="com.ts3wa.port.LauncherActivity" />
+    </shortcut>
+</shortcuts>

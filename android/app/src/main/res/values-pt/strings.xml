@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="import_title">The Sims 3 World Adventures — port da comunidade</string>
+    <string name="import_body">Build experimental ARM32 — o jogo ainda está em desenvolvimento. Selecione a sua cópia descriptografada de The Sims 3 World Adventures 1.0.0 (.ipa). Este app não inclui o jogo.\n\nA importação ocupa aproximadamente 128 MB. Pode selecionar o arquivo em Downloads. Este build exige Android com suporte a aplicativos de 32 bits.</string>
+    <string name="import_button">Selecionar arquivo .ipa ou .obb</string>
+    <string name="import_working">Importando os arquivos do jogo… isso pode levar um minuto.</string>
+    <string name="import_error_io">Não foi possível ler ou gravar os arquivos.</string>
+    <string name="import_error_not_package">Este arquivo não é um pacote .ipa ou .obb compatível de The Sims 3 World Adventures.</string>
+    <string name="import_error_wrong_game">Este pacote não contém o executável de The Sims 3 World Adventures.</string>
+    <string name="import_error_invalid_executable">O executável do jogo está incompleto ou inválido. Converta ou copie o pacote novamente.</string>
+    <string name="import_error_no_arm64">Esta cópia não contém o executável ARM32 suportado. Use World Adventures 1.0.0.</string>
+    <string name="import_error_encrypted">O executável do jogo ainda está criptografado (DRM FairPlay) e não pode rodar. É necessária uma cópia descriptografada.</string>
+    <string name="exit_title">Sair do jogo?</string>
+    <string name="exit_body">Use Save and Continue no menu do jogo para salvar seu progresso antes de sair.</string>
+    <string name="screen_settings">Tela</string>
+    <string name="screen_fit">Proporção original (3:2)</string>
+    <string name="screen_stretch">Preencher a tela (esticar a imagem)</string>
+</resources>

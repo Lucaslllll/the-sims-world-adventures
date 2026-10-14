@@ -1,0 +1,3 @@
+# Public RSA key in SDL's unchanged Native Client example (upstream release-2.30.9).
+# The upstream blob is df6772b4c492a2110c230ba686ee18a56451cfa1; this is not a private credential.
+android/third_party/SDL2-2.30.9/test/nacl/manifest.json:generic-api-key:16
